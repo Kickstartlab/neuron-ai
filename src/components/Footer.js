@@ -18,7 +18,7 @@ export default function Footer() {
               <img src={logo_1} alt="Logo" />
             </a>
 
-            <div className='my-6'>
+            <div className='mt-6 mb-4'>
               <p className='text-lg font-jakatra text-blue-100'>
                 The New Way to Measure
               </p>
@@ -27,19 +27,24 @@ export default function Footer() {
               </p>
             </div>
 
+            
+            <div className='flex gap-x-2 items-center mb-5'>
+              <p className="font-semibold text-blue-100">
+                Email:
+              </p>
+              <a href="mailto:neuronaierc20@gmail.com" className='text-blue-50'>neuronaierc20@gmail.com</a>
+            </div>
+
             <div className='flex gap-x-4 items-center'>
+
               <a href='https://twitter.com/NeuronAi_erc20'>
                 <img src={twitter} alt="Twitter" />
               </a>
+
               <a href='https://t.me/neuronaiportal'>
                 <img src={telegram} alt="Telegram" />
               </a>
-              <div className='flex gap-x-2 items-center'>
-                <p className="font-semibold text-blue-100">
-                  Email:
-                </p>
-                <a href="mailto:neuronaierc20@gmail.com" className='text-blue-50'>neuronaierc20@gmail.com</a>
-              </div>
+
             </div>
 
             <div>
