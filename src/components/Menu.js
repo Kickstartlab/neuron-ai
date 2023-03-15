@@ -20,7 +20,7 @@ export default function Menu() {
           <ul className="text-md flex justify-center gap-12 items-center uppercase">
             <li><a href="/" className="font-bold">Home</a></li>
             <li><a href="#working" className="font-bold">working</a></li>
-            <li><a href="#" className="font-bold">whitepaper</a></li>
+            <li><a href="/" className="font-bold">whitepaper</a></li>
             <li><a href="#about" className="font-bold">about us</a></li>
             <li><a href="#faq" className="font-bold">FAQ</a></li>
           </ul>

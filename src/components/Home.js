@@ -4,12 +4,20 @@ import Menu from './Menu'
 import work_1 from '../assets/work_1.png';
 import work_2 from '../assets/work_2.png';
 import work_3 from '../assets/work_3.png';
+import work_4 from '../assets/work_4.png';
+import work_5 from '../assets/work_5.png';
+import work_6 from '../assets/work_6.png';
+// import b from '../assets/b.png';
+// import c from '../assets/c.png';
+// import d from '../assets/d.png';
 import bg_data from '../assets/bg_data.png';
+import vector from '../assets/vector.png';
+import vector_1 from '../assets/vector_1.png';
 import data from '../assets/data.png';
 import side from '../assets/side.png';
 import side_1 from '../assets/side_1.png';
 import top from '../assets/top.png';
-import top_1 from '../assets/top_1.png';
+// import top_1 from '../assets/top_1.png';
 import icon_1 from '../assets/icon_1.png';
 import icon_2 from '../assets/icon_2.png';
 import icon_3 from '../assets/icon_3.png';
@@ -21,7 +29,9 @@ export default function Home() {
     return (
         <div className="bg-white-50 text-gray-50 font-inter overflow-hidden">
 
+
             {/* top section */}
+
 
             <div className="lg:px-20 px-5 bg-top">
                 <div className='container mx-auto'>
@@ -50,27 +60,26 @@ export default function Home() {
 
                         </div>
 
-                        <div className=" md:mt-0 mt-12 lg:w-1/2 bg-circle z-20">
-                            <img src={top} alt="Logo" className='w-8/12 lg:float-right sm:flex mx-auto' />
-
-                            {/* <div>
-                                <img src={top_1} alt="Logo" className='w-8/12 absolute top-0' />                        
-                            </div> */}
+                        <div className=" md:mt-0 mt-12 lg:w-1/2">
+                            <img src={top} alt="Logo" className='lg:float-right sm:flex mx-auto' />
                         </div>
 
+                        {/* <img src={b} alt="Logo" className='absolute right-0 mr-12 -mt-44 z-20' /> */}
                     </div>
 
                 </div>
             </div>
 
+
             {/* about us section */}
+
 
             <div id='about' className="lg:px-20 lg:py-12 py-6 px-5">
                 <div className='container mx-auto'>
 
                     <img src={side} alt="Logo" className='absolute left-0 -mt-56 lg:block hidden' />
 
-                    <div className="lg:flex block justify-between items-center gap-x-16 py-12 relative z-20">
+                    <div className="lg:flex block justify-between items-center gap-x-16 py-12 space-y-6 relative z-20">
 
                         <div className="lg:w-1/2 w-full">
 
@@ -131,7 +140,9 @@ export default function Home() {
                 </div>
             </div>
 
+
             {/* Neuron Ai Health Data App */}
+
 
             <div id='data' className="">
 
@@ -168,13 +179,14 @@ export default function Home() {
                                 <img src={data} alt="Logo" className='w-8/12 flex mx-auto' />
                             </div>
 
-                            <img src={bg_data} alt="Logo" className='absolute right-0 mr-20 mt-12' />
+                            <img src={bg_data} alt="Logo" className='absolute right-0 mr-20 mt-12 lg:block hidden' />
                         </div>
 
                     </div>
                 </div>
 
             </div>
+
 
             {/* the tech behind Neuron Ai health parameters */}
 
@@ -242,23 +254,100 @@ export default function Home() {
 
             </div>
 
+
             {/* how it works */}
 
-            <div id='work' className="lg:pb-20 py-5 lg:px-20 px-5 container mx-auto">
+
+            <div id='working' className="lg:pb-20 py-5 lg:px-20 px-5 container mx-auto">
                 <h2 className='md:text-4xl text-3xl text-center text-blue-100 font-jakarta font-extrabold capitalize'>
                     How it <span className='text-purple-100'>Works</span>
                 </h2>
+
+                <div className='w-10/12 flex flex-col justify-center lg:space-y-0 space-y-6 mx-auto my-12'>
+
+                    <div className='lg:flex justify-left gap-x-8 '>
+
+                        <img src={work_4} alt="Logo" className='lg:flex mx-auto' />
+
+                        <div className='pt-6 lg:text-left text-center'>
+                            <p className='text-seagreen-100 text-lg font-bold font-jakarta mb-uppercase'>
+                                Step 1
+                            </p>
+                            <h2 className='md:text-4xl text-2xl text-blue-100 font-jakarta font-extrabold capitalize'>
+                                Seamlessly <span className='text-purple-100'>download</span><br></br> Neuron Ai App to your Sphone or tablet
+                            </h2>
+                        </div>
+
+                        <img src={vector} alt="Logo" className='absolute ml-96 mt-72 lg:block hidden' />
+
+                    </div>
+
+                    <div className='lg:flex justify-end items-end lg:space-y-0 space-y-6 gap-x-8 lg:-translate-y-44 -translate-y-0'>
+                        <div className='pt-6 lg:text-right text-center'>
+                            <p className='text-seagreen-100 text-lg font-bold font-jakarta mb-uppercase'>
+                                Step 2
+                            </p>
+                            <h2 className='md:text-4xl text-2xl text-blue-100 font-jakarta font-extrabold capitalize'>
+                                <span className='text-purple-100'>Empower</span> end-users anywhere
+                                to measure and share an extensive
+                                range of health parameters
+                            </h2>
+                        </div>
+                        <img src={work_5} alt="Logo" className='lg:flex mx-auto' />
+
+                    </div>
+
+                    <div className='lg:flex items-end mt-12 lg:space-y-0 space-y-6 gap-x-8 lg:-translate-y-40 -translate-y-0'>
+
+                        <img src={vector_1} alt="Logo" className='absolute right-0 mr-60 lg"-translate-y-0 -translate-y-96 lg:block hidden' />
+
+                        <img src={work_6} alt="Logo" className='lg:mx-0 mx-auto' />
+
+                        <div className='lg:text-left text-center'>
+                            <p className='text-seagreen-100 text-lg font-bold font-jakarta mb-uppercase'>
+                                Step 3
+                            </p>
+                            <h2 className='md:text-4xl text-2xl text-blue-100 font-jakarta font-extrabold capitalize'>
+                                <span className='text-purple-100'>Enhance</span>  your services with <br></br>
+                                real-time health data <br></br>
+                                shared by end-users
+                            </h2>
+                        </div>
+                    </div>
+                </div>
             </div>
+
 
             {/* reviews */}
 
-            <div className="lg:pb-20 py-5 lg:px-20 px-5 container mx-auto">
+
+            <div className="lg:pb-20 py-5 lg:px-20 px-5 container mx-auto bg-round">
+                <p className='text-blue-50 font-semibold font-jakarta mb-uppercase text-center'>
+                    REVIEWS
+                </p>
                 <h2 className='md:text-4xl text-3xl text-center text-blue-100 font-jakarta font-extrabold capitalize'>
                     Some of the <span className='text-purple-100'>Feedback</span> we recieved
                 </h2>
+
+                <div className='bg-white-100 rounded-md lg:p-12 p-6 shadow-md font-poppins text-center lg:w-8/12 mt-8 flex flex-col mx-auto'>
+
+                    <p className='py-6 lg:w-10/12 flex mx-auto leading-loose text-lg text-blue-100'>
+                        Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per
+                    </p>
+
+                    <h4 className='text-xl text-center text-blue-100 font-jakarta font-extrabold capitalize'>
+                        Brian Polley
+                    </h4>
+
+                    <p className='py-6 flex mx-auto text-center text-lg text-blue-100'>
+                        User
+                    </p>
+                </div>
             </div>
 
+
             {/* get started */}
+
 
             <img src={side} alt="Logo" className='absolute left-0 -mt-72 lg:block hidden' />
 
@@ -281,8 +370,8 @@ export default function Home() {
                 </div>
             </div>
 
-
             <Footer />
+
         </div >
     )
 }

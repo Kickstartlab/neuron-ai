@@ -12,7 +12,7 @@ export default function Footer() {
     <div className="py-5">
       <footer className='container text-gray-50 mx-auto lg:px-20 px-5'>
 
-        <div className="grid lg:grid-cols-5 md-grdid-cols-2 grid-cols-1 justify-center mx-auto space-y-4 font-poppins py-12">
+        <div className="grid lg:grid-cols-5 md-grdid-cols-2 grid-cols-1 justify-center mx-auto space-y-6 font-poppins py-12">
 
           <div className='col-span-2'>
 
