@@ -7,9 +7,6 @@ import work_3 from '../assets/work_3.png';
 import work_4 from '../assets/work_4.png';
 import work_5 from '../assets/work_5.png';
 import work_6 from '../assets/work_6.png';
-// import b from '../assets/b.png';
-// import c from '../assets/c.png';
-// import d from '../assets/d.png';
 import bg_data from '../assets/bg_data.png';
 import vector from '../assets/vector.png';
 import vector_1 from '../assets/vector_1.png';
@@ -17,11 +14,8 @@ import data from '../assets/data.png';
 import side from '../assets/side.png';
 import side_1 from '../assets/side_1.png';
 import top from '../assets/top.png';
-// import top_1 from '../assets/top_1.png';
-import icon_1 from '../assets/icon_1.png';
-import icon_2 from '../assets/icon_2.png';
-import icon_3 from '../assets/icon_3.png';
 import bg_circle from '../assets/bg_circle.png';
+import ProgressBar from './ProgressBar';
 
 
 export default function Home() {
@@ -81,7 +75,7 @@ export default function Home() {
 
                     <div className="lg:flex block justify-between items-center gap-x-16 py-12 space-y-6 relative z-20">
 
-                        <div className="lg:w-1/2 w-full">
+                        <div className="w-full text-center">
 
                             <p className='text-blue-50 font-semibold font-jakarta mb-5'>
                                 CHOOSE US?
@@ -91,49 +85,17 @@ export default function Home() {
                                 Why <span className='text-purple-100'>Choose</span> us?
                             </h2>
 
-                            <p className='py-6 font-jakarta lg:w-8/12'>
+                            <p className='py-6 font-jakarta lg:w-8/12 flex mx-auto'>
                                 Neuron Ai Health Data App is an AI-powered App enables anyone to measure a wide range of biomarkers using a smartphone or tablet.
                             </p>
 
-                            <p className='font-jakarta lg:w-8/12'>
-                                Biomarkers include blood pressure, heart rate, heart rate variability (multiple parameters and RRI raw data), oxygen saturation, breathing rate, sympathetic stress, parasympathetic activity, pulse-respiration quotient (PRQ), and Binah Wellness Score.
+                            <p className='font-jakarta lg:w-8/12 mx-auto'>
+                                Biomarkers include blood pressure, heart rate, heart rate variability (multiple parameters and RRI raw data), oxygen saturation, breathing rate, sympathetic stress, parasympathetic activity, pulse-respiration quotient (PRQ), and Wellness Score.
                             </p>
 
                         </div>
 
-                        <img src={bg_circle} alt="Logo" className='absolute right-0 mt-12 lg:block hidden' />
-
-                        <div className="bg_circle lg:w-1/2">
-
-                            <div className='space-y-6'>
-
-                                <div className='flex gap-x-4 items-center'>
-                                    <img src={icon_1} alt="icon" className='' />
-
-                                    <p className='font-jakarta'>
-                                        Lorem Ipsum
-                                    </p>
-                                </div>
-
-                                <div className='flex gap-x-4 items-center'>
-                                    <img src={icon_2} alt="icon" className='' />
-
-                                    <p className='font-jakarta'>
-                                        Lorem Ipsum
-                                    </p>
-                                </div>
-
-                                <div className='flex gap-x-4 items-center'>
-                                    <img src={icon_3} alt="icon" className='' />
-
-                                    <p className='font-jakarta'>
-                                        Lorem Ipsum
-                                    </p>
-                                </div>
-
-                            </div>
-
-                        </div>
+                        <img src={bg_circle} alt="Logo" className='absolute right-0 mt-20 lg:block hidden' />
 
                     </div>
 
@@ -163,7 +125,7 @@ export default function Home() {
                                     measure a wide range of <span className='text-purple-100'>biomarkers</span> using a smartphone or tablet.
                                 </h2>
 
-                                <p className='py-6 font-jakarta'>Biomarkers include blood pressure, heart rate, heart rate variability (multiple parameters and RRI raw data), oxygen saturation, breathing rate, sympathetic stress, parasympathetic activity, pulse-respiration quotient (PRQ), and Binah Wellness Score.</p>
+                                <p className='py-6 font-jakarta'>Biomarkers include blood pressure, heart rate, heart rate variability (multiple parameters and RRI raw data), oxygen saturation, breathing rate, sympathetic stress, parasympathetic activity, pulse-respiration quotient (PRQ), and Wellness Score.</p>
 
                                 <div className="font-jakarta">
                                     <a href="/">
@@ -209,10 +171,6 @@ export default function Home() {
                             <div className='space-y-4'>
                                 <img src={work_1} alt="work" className='flex mx-auto' />
 
-                                <h4 className='text-xl font-bold capitalize'>
-                                    unique mix
-                                </h4>
-
                                 <p className='text-white-100'>
                                     Neuron Ai's technology applies a unique mix of signal processing and AI technologies, combined with a proprietary mathematical back-end to analyze a signal taken from exposed skin on the surface of a human face. It applies motion compensation and illumination normalization and supports any gender and skin color. The health parameters extraction is based on a remote photoplethysmography rPPG or PPG signal (using the touch of a finger on the smartphone or tablet’s rear camera for challenging environmental conditions like complete darkness).
                                 </p>
@@ -222,10 +180,6 @@ export default function Home() {
                         <div className='font-poppins text-center bg-white-100 text-blue-100 rounded-xl px-5 py-8'>
                             <div className='space-y-4'>
                                 <img src={work_2} alt="work" className='flex mx-auto' />
-
-                                <h4 className='text-xl font-bold capitalize'>
-                                    unique mix
-                                </h4>
 
                                 <p className='text-blue-100'>
                                     Neuron Ai's blood pressure monitoring technology extracts blood pressure using an optical technique called remote photoplethysmography (rPPG), which analyzes light that reflects off exposed skin on a human face. The technology uses advanced AI and deep learning algorithms, including computer vision technology and signal processing.
@@ -237,10 +191,6 @@ export default function Home() {
                             <div className='space-y-4'>
 
                                 <img src={work_3} alt="work" className='flex mx-auto' />
-
-                                <h4 className='text-xl font-bold capitalize'>
-                                    unique mix
-                                </h4>
 
                                 <p className='text-blue-100'>
                                     Neuron Ai's sympathetic stress level measurement is based on the internationally approved Baevsky Stress Index as well as additional parameters. The technology does not require the analysis of any identifiable personal feature (e.g., eyes).
@@ -257,8 +207,7 @@ export default function Home() {
 
             {/* how it works */}
 
-
-            <div id='working' className="lg:pb-20 py-5 lg:px-20 px-5 container mx-auto">
+            <div id='working' className="py-5 lg:px-20 px-5 container mx-auto">
                 <h2 className='md:text-4xl text-3xl text-center text-blue-100 font-jakarta font-extrabold capitalize'>
                     How it <span className='text-purple-100'>Works</span>
                 </h2>
@@ -317,59 +266,36 @@ export default function Home() {
                 </div>
             </div>
 
+            {/* tokenomics */}
 
-            {/* reviews */}
+            <div id='tokenomics' className="lg:px-20 px-5 lg:pb-20 py-5 relative z-20">
+                <div className='container mx-auto'>
+                    <h2 className='md:text-5xl text-3xl text-purple-100 text-center font-extrabold'>
+                        Tokenomics
+                    </h2>
+
+                    <div className='mt-8'>
+                        <h3 className='md:text-4xl text-3xl text-blue-50 mb-5 text-center font-poppins font-bold'>
+                            Total supply 1,000,000,000 $NAI
+                        </h3>
+                        <h3 className='md:text-4xl text-3xl text-blue-50 text-center font-poppins font-bold'>
+                            TAX 5/5
+                        </h3>
+                    </div>
 
 
-            <div className="lg:pb-20 py-5 lg:px-20 px-5 container mx-auto bg-round">
-                <p className='text-blue-50 font-semibold font-jakarta mb-uppercase text-center'>
-                    REVIEWS
-                </p>
-                <h2 className='md:text-4xl text-3xl text-center text-blue-100 font-jakarta font-extrabold capitalize'>
-                    Some of the <span className='text-purple-100'>Feedback</span> we recieved
-                </h2>
+                    <div className='lg:pt-12 pt-6'>
+                        <ProgressBar />
+                    </div>
 
-
-                <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg" className='absolute ml-36 -mt-5 lg:block hidden'>
-                    <circle cx="25.5" cy="25.5" r="25.5" fill="#C4C4C4" />
-                </svg>
-
-                <svg width="42" height="32" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg" className='absolute right-0 mr-48 -mt-3 lg:block hidden'>
-                    <circle cx="25.5" cy="25.5" r="25.5" fill="#C4C4C4" />
-                </svg>
-
-                <div className='bg-white-100 rounded-md lg:p-12 p-6 shadow-md font-poppins text-center lg:w-8/12 mt-8 flex flex-col mx-auto'>
-
-                    <p className='py-6 lg:w-10/12 flex mx-auto leading-loose text-lg text-blue-100'>
-                        Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per
-                    </p>
-
-                    <h4 className='text-xl text-center text-blue-100 font-jakarta font-extrabold capitalize'>
-                        Brian Polley
-                    </h4>
-
-                    <p className='py-6 flex mx-auto text-center text-lg text-blue-100'>
-                        User
-                    </p>
                 </div>
-
-
-                <svg width="42" height="32" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg" className='absolute  ml-20 -mt-6 lg:block hidden 6'>
-                    <circle cx="25.5" cy="25.5" r="25.5" fill="#C4C4C4" />
-                </svg>
-
-                <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg" className='absolute mr-32 right-0 -mt-8 lg:block hidden'>
-                    <circle cx="25.5" cy="25.5" r="25.5" fill="#C4C4C4" />
-                </svg>
             </div>
-
 
             {/* get started */}
 
-
             <img src={side} alt="Logo" className='absolute left-0 -mt-72 lg:block hidden' />
 
-            <div className="lg:px-20 px-5 lg:py-20 py-5 relative z-20">
+            <div className="lg:px-20 px-5 lg:pb-20 py-5 relative z-20">
                 <div className='container mx-auto'>
                     <div className='bg-white-100 rounded-md lg:p-12 p-6 shadow-md font-poppins text-center lg:w-10/12 flex flex-col mx-auto'>
 
@@ -377,11 +303,11 @@ export default function Home() {
                             Get started with <span className='font-medium'>NEURON AI</span>
                         </h2>
 
-                        <p className='py-6 lg:w-1/2 flex mx-auto leading-loose'>
+                        {/* <p className='py-6 lg:w-1/2 flex mx-auto leading-loose'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sodales morbi tristique libero urna sem vitae. Viverra facilisis rhoncus et, nibh nullam vitae laoreet.
-                        </p>
+                        </p> */}
 
-                        <button className='rounded-full px-6 py-3 bg-gradient text-white-100 w-44 flex mx-auto'>
+                        <button className='rounded-full mt-5 px-6 py-3 bg-gradient text-white-100 w-44 flex mx-auto'>
                             Lets Get Started
                         </button>
                     </div>
