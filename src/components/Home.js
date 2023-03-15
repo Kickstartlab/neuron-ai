@@ -329,6 +329,15 @@ export default function Home() {
                     Some of the <span className='text-purple-100'>Feedback</span> we recieved
                 </h2>
 
+
+                <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg" className='absolute ml-36 -mt-5 lg:block hidden'>
+                    <circle cx="25.5" cy="25.5" r="25.5" fill="#C4C4C4" />
+                </svg>
+
+                <svg width="42" height="32" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg" className='absolute right-0 mr-44 -mt-3 lg:block hidden'>
+                    <circle cx="25.5" cy="25.5" r="25.5" fill="#C4C4C4" />
+                </svg>
+
                 <div className='bg-white-100 rounded-md lg:p-12 p-6 shadow-md font-poppins text-center lg:w-8/12 mt-8 flex flex-col mx-auto'>
 
                     <p className='py-6 lg:w-10/12 flex mx-auto leading-loose text-lg text-blue-100'>
@@ -343,6 +352,15 @@ export default function Home() {
                         User
                     </p>
                 </div>
+
+
+                <svg width="42" height="32" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg" className='absolute  ml-24 -mt-6 lg:block hidden 6'>
+                    <circle cx="25.5" cy="25.5" r="25.5" fill="#C4C4C4" />
+                </svg>
+
+                <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg" className='absolute mr-32 right-0 -mt-8 lg:block hidden'>
+                    <circle cx="25.5" cy="25.5" r="25.5" fill="#C4C4C4" />
+                </svg>
             </div>
 
 
