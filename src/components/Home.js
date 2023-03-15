@@ -264,7 +264,7 @@ export default function Home() {
 
             <div className="lg:px-20 px-5 lg:py-20 py-5 relative z-20">
                 <div className='container mx-auto'>
-                    <div className='bg-white-100 rounded-md p-12 shadow-md font-poppins text-center lg:w-10/12 flex flex-col mx-auto'>
+                    <div className='bg-white-100 rounded-md lg:p-12 p-6 shadow-md font-poppins text-center lg:w-10/12 flex flex-col mx-auto'>
 
                         <h2 className='md:text-4xl text-3xl text-gradient font-extrabold'>
                             Get started with <span className='font-medium'>NEURON AI</span>
