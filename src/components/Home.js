@@ -334,7 +334,7 @@ export default function Home() {
                     <circle cx="25.5" cy="25.5" r="25.5" fill="#C4C4C4" />
                 </svg>
 
-                <svg width="42" height="32" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg" className='absolute right-0 mr-44 -mt-3 lg:block hidden'>
+                <svg width="42" height="32" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg" className='absolute right-0 mr-48 -mt-3 lg:block hidden'>
                     <circle cx="25.5" cy="25.5" r="25.5" fill="#C4C4C4" />
                 </svg>
 
@@ -354,7 +354,7 @@ export default function Home() {
                 </div>
 
 
-                <svg width="42" height="32" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg" className='absolute  ml-24 -mt-6 lg:block hidden 6'>
+                <svg width="42" height="32" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg" className='absolute  ml-20 -mt-6 lg:block hidden 6'>
                     <circle cx="25.5" cy="25.5" r="25.5" fill="#C4C4C4" />
                 </svg>
 
