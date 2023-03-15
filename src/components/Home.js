@@ -275,11 +275,11 @@ export default function Home() {
                     </h2>
 
                     <div className='mt-8'>
-                        <h3 className='md:text-4xl text-3xl text-blue-50 mb-5 text-center font-poppins font-bold'>
-                            Total supply 1,000,000,000 $NAI
+                        <h3 className='md:text-4xl text-2xl text-blue-50 mb-5 text-center font-poppins font-bold'>
+                            Total Supply: 1,000,000,000 $NAI
                         </h3>
-                        <h3 className='md:text-4xl text-3xl text-blue-50 text-center font-poppins font-bold'>
-                            TAX 5/5
+                        <h3 className='md:text-4xl text-2xl text-blue-50 text-center font-poppins font-bold'>
+                            TAX: 5/5
                         </h3>
                     </div>
 
