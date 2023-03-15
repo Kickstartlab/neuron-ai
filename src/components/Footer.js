@@ -2,8 +2,6 @@ import React from 'react'
 import logo_1 from '../assets/logo_1.png';
 import twitter from '../assets/twitter.png';
 import telegram from '../assets/telegram.png';
-import redit from '../assets/redit.png';
-import orb from '../assets/orb.png';
 
 
 
@@ -14,7 +12,7 @@ export default function Footer() {
 
         <div className="grid lg:grid-cols-5 md-grdid-cols-2 grid-cols-1 justify-center mx-auto space-y-6 font-poppins py-12">
 
-          <div className='col-span-2'>
+          <div className='col-span-2 z-20'>
 
             <a href='/'>
               <img src={logo_1} alt="Logo" />
@@ -30,18 +28,18 @@ export default function Footer() {
             </div>
 
             <div className='flex gap-x-4 items-center'>
-              <a href='/'>
+              <a href='https://twitter.com/NeuronAi_erc20'>
                 <img src={twitter} alt="Twitter" />
               </a>
-              <a href='/'>
+              <a href='https://t.me/neuronaiportal'>
                 <img src={telegram} alt="Telegram" />
               </a>
-              <a href='/'>
-                <img src={orb} alt="Logo" />
-              </a>
-              <a href='/'>
-                <img src={redit} alt="Redit" />
-              </a>
+              <div className='flex gap-x-2 items-center'>
+                <p className="font-semibold text-blue-100">
+                  Email:
+                </p>
+                <a href="mailto:neuronaierc20@gmail.com" className='text-blue-50'>neuronaierc20@gmail.com</a>
+              </div>
             </div>
 
             <div>
