@@ -28,11 +28,46 @@
   text-fill-color: transparent;
 }
 
-.bg-round{
+.bg-round {
   background-image: url(./assets/bg-round.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.shine {
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  10% {
+    opacity: 1;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+  }
+
+  100% {
+    opacity: 0;
+    transition-property: left, top, opacity;
+  }
+}
+
+.line {
+  animation: line 3s linear;
+  animation-delay: 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes line {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 25%;
+    /* opacity: 0; */
+  }
 }
 
 .rotate {

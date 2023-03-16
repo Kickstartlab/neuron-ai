@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Footer from './Footer'
 import Menu from './Menu'
 import work_1 from '../assets/work_1.png';
@@ -16,9 +16,19 @@ import side_1 from '../assets/side_1.png';
 import top from '../assets/top.png';
 import bg_circle from '../assets/bg_circle.png';
 import ProgressBar from './ProgressBar';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 export default function Home() {
+
+    useEffect(() => {
+        Aos.init({
+            duration: 3000,
+            // once: true
+        });
+        Aos.refresh();
+    }, [])
 
     return (
         <div className="bg-white-50 text-gray-50 font-inter overflow-hidden">
@@ -55,10 +65,9 @@ export default function Home() {
                         </div>
 
                         <div className=" md:mt-0 mt-12 lg:w-1/2">
-                            <img src={top} alt="Logo" className='lg:float-right sm:flex mx-auto' />
+                            <img data-aos='fade-left' src={top} alt="Logo" className='lg:float-right sm:flex mx-auto' />
                         </div>
 
-                        {/* <img src={b} alt="Logo" className='absolute right-0 mr-12 -mt-44 z-20' /> */}
                     </div>
 
                 </div>
@@ -95,7 +104,7 @@ export default function Home() {
 
                         </div>
 
-                        <img src={bg_circle} alt="Logo" className='absolute right-0 mt-20 lg:block hidden' />
+                        <img src={bg_circle} alt="Logo" className='absolute right-0 mt-20 lg:block hidden shine' />
 
                     </div>
 
@@ -138,10 +147,10 @@ export default function Home() {
                             </div>
 
                             <div className=" md:mt-0 mt-12 lg:w-1/2 bg-circle z-20">
-                                <img src={data} alt="Logo" className='w-8/12 flex mx-auto' />
+                                <img data-aos='fade-up' src={data} alt="Logo" className='w-8/12 flex mx-auto' />
                             </div>
 
-                            <img src={bg_data} alt="Logo" className='absolute right-0 mr-20 mt-12 lg:block hidden' />
+                            <img data-aos='fade-left' src={bg_data} alt="Logo" className='absolute right-0 mr-20 mt-12 lg:block hidden' />
                         </div>
 
                     </div>
@@ -166,7 +175,7 @@ export default function Home() {
 
                     <div className='grid lg:grid-cols-3 grid-cols-1 items-center gap-x-6 lg:space-y-0 space-y-6 my-16'>
 
-                        <div className='font-poppins text-center bg-seagreen-100 text-white-100 rounded-xl px-5 py-8'>
+                        <div data-aos='fade-up' className='font-poppins text-center bg-seagreen-100 text-white-100 rounded-xl px-5 py-8'>
 
                             <div className='space-y-4'>
                                 <img src={work_1} alt="work" className='flex mx-auto' />
@@ -177,7 +186,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className='font-poppins text-center bg-white-100 text-blue-100 rounded-xl px-5 py-8'>
+                        <div data-aos='fade-up' className='font-poppins text-center bg-white-100 text-blue-100 rounded-xl px-5 py-8'>
                             <div className='space-y-4'>
                                 <img src={work_2} alt="work" className='flex mx-auto' />
 
@@ -187,7 +196,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className='font-poppins text-center bg-white-100 text-blue-100 rounded-xl px-5 py-8'>
+                        <div data-aos='fade-up' className='font-poppins text-center bg-white-100 text-blue-100 rounded-xl px-5 py-8'>
                             <div className='space-y-4'>
 
                                 <img src={work_3} alt="work" className='flex mx-auto' />
@@ -216,7 +225,7 @@ export default function Home() {
 
                     <div className='lg:flex justify-left gap-x-8 '>
 
-                        <img src={work_4} alt="Logo" className='lg:flex mx-auto' />
+                        <img data-aos='zoom-in' src={work_4} alt="Logo" className='lg:flex mx-auto' />
 
                         <div className='pt-6 lg:text-left text-center'>
                             <p className='text-seagreen-100 text-lg font-bold font-jakarta mb-uppercase'>
@@ -227,7 +236,7 @@ export default function Home() {
                             </h2>
                         </div>
 
-                        <img src={vector} alt="Logo" className='absolute ml-96 mt-72 lg:block hidden' />
+                        <img src={vector} alt="Logo" className='absolute ml-96 mt-72 lg:block hidden line' />
 
                     </div>
 
@@ -242,15 +251,15 @@ export default function Home() {
                                 range of health parameters
                             </h2>
                         </div>
-                        <img src={work_5} alt="Logo" className='lg:flex mx-auto' />
+                        <img   data-aos='zoom-in'src={work_5} alt="Logo" className='lg:flex mx-auto' />
 
                     </div>
 
                     <div className='lg:flex items-end mt-12 lg:space-y-0 space-y-6 gap-x-8 lg:-translate-y-40 -translate-y-0'>
 
-                        <img src={vector_1} alt="Logo" className='absolute right-0 mr-60 lg"-translate-y-0 -translate-y-96 lg:block hidden' />
+                        <img src={vector_1} alt="Logo" className='line absolute right-0 mr-60 lg"-translate-y-0 -translate-y-96 lg:block hidden' />
 
-                        <img src={work_6} alt="Logo" className='lg:mx-0 mx-auto' />
+                        <img  data-aos='zoom-in' src={work_6} alt="Logo" className='lg:mx-0 mx-auto' />
 
                         <div className='lg:text-left text-center'>
                             <p className='text-seagreen-100 text-lg font-bold font-jakarta mb-uppercase'>
@@ -284,7 +293,7 @@ export default function Home() {
                     </div>
 
 
-                    <div className='lg:pt-12 pt-6'>
+                    <div data-aos='zoom-in' className='lg:pt-12 pt-6'>
                         <ProgressBar />
                     </div>
 
