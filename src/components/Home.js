@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import Footer from './Footer'
 import Menu from './Menu'
 import work_1 from '../assets/work_1.png';
@@ -12,6 +12,7 @@ import vector from '../assets/vector.png';
 import vector_1 from '../assets/vector_1.png';
 import data from '../assets/data.png';
 import side from '../assets/side.png';
+import video from '../assets/video.mp4';
 import side_1 from '../assets/side_1.png';
 import top from '../assets/top.png';
 import bg_circle from '../assets/bg_circle.png';
@@ -55,7 +56,7 @@ export default function Home() {
                             <p className='py-6 font-jakarta'>Neuron Ai Health Data App is an AI-powered App enables anyone to measure a wide range of biomarkers using a smartphone or tablet.</p>
 
                             <div className="font-jakarta">
-                                <a href="/">
+                                <a href="https://youtu.be/RgjVcU7gN6M" target={'_blank'}>
                                     <button className="text-white-100 bg-blue-50 py-3 md:px-8 px-3 rounded-sm font-semibold mt-5 text-sm">
                                         Have a look inside?
                                     </button>
@@ -251,7 +252,7 @@ export default function Home() {
                                 range of health parameters
                             </h2>
                         </div>
-                        <img   data-aos='zoom-in'src={work_5} alt="Logo" className='lg:flex mx-auto' />
+                        <img data-aos='zoom-in' src={work_5} alt="Logo" className='lg:flex mx-auto' />
 
                     </div>
 
@@ -259,7 +260,7 @@ export default function Home() {
 
                         <img src={vector_1} alt="Logo" className='line absolute right-0 mr-60 lg"-translate-y-0 -translate-y-96 lg:block hidden' />
 
-                        <img  data-aos='zoom-in' src={work_6} alt="Logo" className='lg:mx-0 mx-auto' />
+                        <img data-aos='zoom-in' src={work_6} alt="Logo" className='lg:mx-0 mx-auto' />
 
                         <div className='lg:text-left text-center'>
                             <p className='text-seagreen-100 text-lg font-bold font-jakarta mb-uppercase'>
