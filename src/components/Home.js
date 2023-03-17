@@ -12,7 +12,6 @@ import vector from '../assets/vector.png';
 import vector_1 from '../assets/vector_1.png';
 import data from '../assets/data.png';
 import side from '../assets/side.png';
-import video from '../assets/video.mp4';
 import side_1 from '../assets/side_1.png';
 import top from '../assets/top.png';
 import bg_circle from '../assets/bg_circle.png';
@@ -288,8 +287,11 @@ export default function Home() {
                         <h3 className='md:text-4xl text-2xl text-blue-50 mb-5 text-center font-poppins font-bold'>
                             Total Supply: 1,000,000,000 $NAI
                         </h3>
-                        <h3 className='md:text-4xl text-2xl text-blue-50 text-center font-poppins font-bold'>
+                        <h3 className='md:text-4xl text-2xl text-blue-50 mb-5 text-center font-poppins font-bold'>
                             TAX: 5/5
+                        </h3>
+                        <h3 className='text-xl text-blue-50 text-center font-poppins font-bold'>
+                            CA : 0xf888701B9F18Af4691cA7E9774632D2F6FaA5A36
                         </h3>
                     </div>
 
